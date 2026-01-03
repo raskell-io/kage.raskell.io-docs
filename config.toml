@@ -1,0 +1,39 @@
+# Kage Documentation - Zola Configuration
+base_url = "https://kage.raskell.io/docs"
+title = "Kage Documentation"
+description = "Comprehensive documentation for Kage"
+theme = "tanuki"
+compile_sass = true
+build_search_index = true
+generate_feeds = false
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+extra_syntaxes_and_themes = ["syntaxes"]
+smart_punctuation = true
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
+[extra]
+mode = "docs"
+github = "https://github.com/raskell-io/kage"
+discussions = "https://github.com/raskell-io/kage/discussions"
+edit_url = "https://github.com/raskell-io/kage.raskell.io-docs/edit/main/content"
+show_theme_toggle = true
+
+# Version picker
+[extra.versions]
+current = "26.01"
+list = [
+    { version = "26.01", url = "/docs/", label = "latest" },
+]
