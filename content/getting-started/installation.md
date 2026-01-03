@@ -27,7 +27,7 @@ This will:
 If you have Rust installed, you can install Kage via Cargo:
 
 ```bash
-cargo install kage
+cargo install raskell-kage
 ```
 
 ## Docker
