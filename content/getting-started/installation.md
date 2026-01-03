@@ -30,6 +30,31 @@ If you have Rust installed, you can install Kage via Cargo:
 cargo install kage
 ```
 
+## Docker
+
+Kage is available as a multi-architecture Docker image:
+
+```bash
+docker pull ghcr.io/raskell-io/kage:latest
+```
+
+Run as a container:
+
+```bash
+docker run -d \
+  --name kage \
+  -v ~/.config/kage:/etc/kage \
+  -v ~/.local/share/kage:/var/lib/kage \
+  ghcr.io/raskell-io/kage:latest
+```
+
+Available tags:
+- `latest` - Latest stable release
+- `v0.1.2` - Specific version
+- `v0.1.2-amd64` - Specific architecture
+
+Supported architectures: `linux/amd64`, `linux/arm64`
+
 ## From Source
 
 Clone the repository and build:
